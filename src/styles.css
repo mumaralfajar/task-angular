@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+/* General Layout */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Task Form Styles */
+.form-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Task List Styles */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-buttons button {
+  margin-left: 10px;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination li.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination li:hover:not(.disabled) {
+  background-color: #f1f1f1;
+}
+
+/* Add Task Button */
+.btn-add-task {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+

@@ -1,0 +1,11 @@
+<form (ngSubmit)="submitForm()">
+  <div>
+    <label>Title</label>
+    <input [(ngModel)]="task.title" name="title" required />
+  </div>
+  <div>
+    <label>Description</label>
+    <input [(ngModel)]="task.description" name="description" required />
+  </div>
+  <button type="submit">{{ isEdit ? 'Update' : 'Create' }} Task</button>
+</form>
